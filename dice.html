@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Madhu's Casino</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://codepen.io/hexon_collider/pen/xedGpM.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <img class="center" src="./images/logo.png" alt="Madhu's Casino ">
+
+
+<!-- <div class="container">
+<div class="jumbotron text-center">
+  <img src="logo.png" alt="Madhu's Casino">
+  <h1>Madhu's Casino</h1>
+  <p>Where Dreams Come True!</p> 
+</div>
+</div> -->
+
+<ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active " href="#">Home</a>
+    </li>
+    <li class="nav-item  dropdown ">
+      <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Games</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active " href="">Poker</a>
+        <a class="dropdown-item active " href="first_roll.php">Dice & Craps</a>
+        <a class="dropdown-item active " href="monty-hall.php">Let's Make a Deal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active " href="#">Contact</a>
+    </li>
+  </ul>
+
+  <div id="background"></div>
+  <div id="wrapper">
+    <div id="platform">
+      <div id="dice">
+        <div class="side front">
+          <div class="dot center"></div>
+        </div>
+        <div class="side front inner"></div>
+        <div class="side top">
+          <div class="dot dtop dleft"></div>
+          <div class="dot dbottom dright"></div>
+        </div>
+        <div class="side top inner"></div>
+        <div class="side right">
+          <div class="dot dtop dleft"></div>
+          <div class="dot center"></div>
+          <div class="dot dbottom dright"></div>
+        </div>
+        <div class="side right inner"></div>
+        <div class="side left">
+          <div class="dot dtop dleft"></div>
+          <div class="dot dtop dright"></div>
+          <div class="dot dbottom dleft"></div>
+          <div class="dot dbottom dright"></div>
+        </div>
+        <div class="side left inner"></div>
+        <div class="side bottom">
+          <div class="dot center"></div>
+          <div class="dot dtop dleft"></div>
+          <div class="dot dtop dright"></div>
+          <div class="dot dbottom dleft"></div>
+          <div class="dot dbottom dright"></div>
+        </div>
+        <div class="side bottom inner"></div>
+        <div class="side back">
+          <div class="dot dtop dleft"></div>
+          <div class="dot dtop dright"></div>
+          <div class="dot dbottom dleft"></div>
+          <div class="dot dbottom dright"></div>
+          <div class="dot center dleft"></div>
+          <div class="dot center dright"></div>
+        </div>
+        <div class="side back inner"></div>
+        <div class="side cover x"></div>
+        <div class="side cover y"></div>
+        <div class="side cover z"></div>
+      </div>
+    </div>
+  </div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="container-fluid center text-center ">
+    <h1>Featured Game: <i>Casino Craps</i> </h1>
+  </br>
+    <h2>Rules of the Game </h2>
+    <p >Click on the button to find the rules for this game !!</p>
+  </div>
+  <div class="text">
+    <button type="button" class="btn btn-dark btn-lg btn-info " data-toggle="modal" data-target="#myModal">
+            See Rules
+          </button>
+      <button type="button" class="btn btn-dark btn-lg btn-primary" onclick="location.href='first_roll.php'">Play the Game </button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Rules</h4>
+                  <button type="button " class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                 <p> 
+                    <li>Each round has two phases: Come Out and Point. To start a round, the shooter makes one or more Come Out rolls. </li>
+                    <li>A Come Out roll of 2, 3 or 12 (called Craps, the shooter is said to 'crap out') ends the round with players losing their Pass Line bets.</li> 
+                    <li> A Come Out roll of 7 or 11 (a Natural) results in a win for Pass Line bets. </li>
+                    <li>The shooter continues to make Come Out rolls until he rolls 4, 5, 6, 8, 9, or 10, which number becomes the Point.  </li>
+                    <li>If the shooter rolls the point number, the result is a win for bets on the Pass Line. </li>
+                    <li>If the shooter rolls a seven (a Seven-out), the pass line loses and the round ends. </li>
+                </p>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  </div>
+  
+</body>
+</html>
